@@ -1,6 +1,10 @@
-name: Post welcome content
+name: Post welcome comment
 on:
   pull_request:
     types: [opened]
-  permssions:
-    pull-requests: write
+permssions:
+  pull-requests: write
+jobs:
+  welcome:
+    name: Post welcome comment
+    runs-on: ubuntu-latest
